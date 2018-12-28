@@ -1,12 +1,11 @@
-#Creating Devops Ecosystem Jenkins + ACR + Azure Monitor + CosmoDB + Grafana
+#Create new Resource Group - East US Location
+az group create --resource-group DevopsEcosystem --location eastus
+
+# Remove Resource Group
+az group delete --resource-group DevopsEcosystem --yes
+
+#Creating Devops Ecosystem Kubernetes + Jenkins + ACR + Azure Monitor + CosmoDB + Grafana
 az group deployment create --resource-group DevOpsEcoSystem --template-uri https://raw.githubusercontent.com/adilsonbna/devopsecosystem/master/azuredeploy.json
-
-
-
-
-
-
-
 
 # Azure rbac code
 b159ec9d-77b4-41b3-9823-d1df89e7a690
