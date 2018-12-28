@@ -1,14 +1,13 @@
-az config mode arm
-
-az group deployment create Devopsecosystemv2 DevOpsEcoSystem --template-uri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/cloudbeesjenkins-dockerdatacenter/azuredeploy.json
-
-az provider register -n Microsoft.ContainerService
-
-az group deployment create --resource-group DevOpsEcoSystem --template-file /Users/adilsoncesar/Desktop/azuredeploy.json
+#Creating Devops Ecosystem Jenkins + ACR + Azure Monitor + CosmoDB + Grafana
+az group deployment create --resource-group DevOpsEcoSystem --template-uri https://raw.githubusercontent.com/adilsonbna/devopsecosystem/master/azuredeploy.json
 
 
 
+
+
+
+
+
+# Azure rbac code
 b159ec9d-77b4-41b3-9823-d1df89e7a690
 d3296b10-1668-47d1-b552-b57c10414db9
-
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCoEUZz4aVHWgUKmBttWjsBv9zdKFsNHYYVu/2jLsYkX+nfIy+onBx28D/okAwBBLC9M7f24XYmMskNo2q6itDAA8hH42S4HiJLZWDH4oeXg6fb08KUd3cOV8Xh9DzrRilbtGv4uLTInOKGWQqOGuxqYemzdFBW2CJ2n5lPJvLd4SxP290hXzRQkSOpdv1eB/T8WcdOp3mcbYILBZihEFHAPzC+80NLr+JQW7KLbNveELMoz45b6LfZzW1UeMXa1k1+vXg340RNzZR0DIjGo8+WKbektKTQ9WOrXjSxOS/OKxo4JJWVonrIWdf/3BEz+Kp8jKR8ef2Rto+LFP32L2Pf adilsoncesar@Adilsons-MacBook-Pro.local
