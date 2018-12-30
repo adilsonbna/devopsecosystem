@@ -1,19 +1,16 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: hello-world-deployment2
+  name: hello-world-nginx
 spec:
-  replicas: 2
+  replicas: 10
   template:
     metadata:
       labels:
-        app: hello-world2
+        app: hello-world-nginx
     spec:
       containers:
-      - name: hello-world
+      - name: hello-world-nginx
         image: $TAGGED_IMAGE_NAME
         ports:
         - containerPort: 80
-        env:
-        - name: MONGODB_URI
-          value: "$MONGODB_URI"
