@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Hello world!</title>
+	<title>Hello world</title>
 </head>
 <body>
 	<h1><?php echo "Hello ".($_ENV["NAME"]?$_ENV["NAME"]:"world")."!"; ?></h1>
