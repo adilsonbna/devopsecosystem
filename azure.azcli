@@ -6,6 +6,8 @@ az group create --resource-group DevopsEcosystem --location eastus
 
 # Remove Resource Group
 az group delete --resource-group DevopsEcosystem --yes
+az group delete --resource-group MC_DevOpsEcoSystem_acsv2kubecluster_eastus --yes
+
 
 #Creating Devops Ecosystem Kubernetes + Jenkins + ACR + Azure Monitor + CosmoDB + Grafana
 az group deployment create --resource-group DevOpsEcoSystem --template-uri https://raw.githubusercontent.com/adilsonbna/devopsecosystem/master/azuredeploy.json

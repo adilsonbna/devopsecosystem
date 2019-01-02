@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-world-nginx
 spec:
-  replicas: 10
+  replicas: 1
   template:
     metadata:
       labels:
@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: hello-world-nginx
-        image: $TAGGED_IMAGE_NAME
+        image: hello-world-nginx
         ports:
         - containerPort: 80
