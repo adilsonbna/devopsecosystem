@@ -10,4 +10,4 @@ spec:
     name: hello-world-nginx
   minReplicas: 1
   maxReplicas: 10
-  targetCPUUtilizationPercentage: 10
+  targetCPUUtilizationPercentage: 1

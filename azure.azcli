@@ -1,5 +1,5 @@
 #Create new RBAC
-az ad sp create-for-rbac --name devops
+az ad sp create-for-rbac --name nonsapdevops
 
 #Create new Resource Group - East US Location
 az group create --resource-group DevopsEcosystem --location eastus
@@ -17,4 +17,11 @@ b159ec9d-77b4-41b3-9823-d1df89e7a690
 d3296b10-1668-47d1-b552-b57c10414db9
 
 
-az group deployment create --resource-group DevOpsEcoSystem --template-template-file
+
+
+########################### MARS ################################
+AdilsonSilvaRG
+
+
+az group deployment create --resource-group AdilsonSilvaRG --template-template-file 
+
