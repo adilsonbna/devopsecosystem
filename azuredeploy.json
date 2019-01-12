@@ -25,7 +25,7 @@
     },
     "linuxAdminPassword": {
       "type": "securestring",
-      "defaultValue": "acs123456789",
+      "defaultValue": "Deadfish@22",
       "metadata": {
         "description": "Password for the Jenkins and Grafana Virtual Machines."
       }
