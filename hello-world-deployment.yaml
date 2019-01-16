@@ -7,10 +7,10 @@ spec:
   template:
     metadata:
       labels:
-        app: hello-world-nginx
+        app: hello-world
     spec:
       containers:
-      - name: hello-world-nginx
+      - name: hello-world
         image: $TAGGED_IMAGE_NAME
         ports:
         - containerPort: 80
