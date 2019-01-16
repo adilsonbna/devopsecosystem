@@ -21,6 +21,14 @@ d3296b10-1668-47d1-b552-b57c10414db9
 ########################### MARS ################################
 AdilsonSilvaRG
 
+az group deployment create --resource-group AdilsonSilvaRG --template-file /Users/adilsoncesar/Desktop/azuredeploy.json
 
-az group deployment create --resource-group AdilsonSilvaRG --template-template-file 
+
+
+
+
+
+
+
+
 
