@@ -24,6 +24,10 @@ AdilsonSilvaRG
 az group deployment create --resource-group AdilsonSilvaRG --template-file /Users/adilsoncesar/Desktop/azuredeploy.json
 
 
+az aks browse --resource-group AdilsonSilvaRG --name marsdevopskubernetescluster
+az aks get-credentials --resource-group AdilsonSilvaRG --name marsdevopskubernetescluster
+
+
 
 
 
