@@ -1,20 +1,19 @@
 apiVersion: extensions/v1beta1
-kind: HorizontalPodAutoscaler
+kind: Deployment
 metadata:
-  name: hello-world-nginx
-  namespace: default
-  image: nginx
+  name: hello-world-deployment
 spec:
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: hello-world-nginx
-  minReplicas: 1
-  maxReplicas: 10
-  metrics:
-  - type: Resource
-    resource:
-      name: cpu
-      target:
-        type: Utilization
-        averageUtilization: 50
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+      - name: hello-world
+        image: $TAGGED_IMAGE_NAME
+        ports:
+        - containerPort: 80
+        env:
+        - name: MONGODB_URI
+          value: "$MONGODB_URI"
